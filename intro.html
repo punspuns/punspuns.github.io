@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>IroIro</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css_js/irohome.css">
+    <script type = "text/javascript">
+        function displayNextImage() {
+            x = (x === images.length - 1) ? 0 : x + 1;
+            document.getElementById("logo-intro").src = images[x];
+        }
+    
+        function displayPreviousImage() {
+            x = (x <= 0) ? images.length - 1 : x - 1;
+            document.getElementById("logo-intro").src = images[x];
+        }
+    
+        function startTimer() {
+            setInterval(displayNextImage, 1000);
+        }
+    
+        var images = [], x = -1;
+        images[0] = "./images/icon/logo1.svg";
+        images[1] = "./images/icon/logo2.svg";
+        images[2] = "./images/icon/logo3.svg";
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+      </style>
+</head>
+<body onload = "startTimer()">
+    
+    <div class="container irointro text-center">
+        <div class="row justify-content-center">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-10">
+                <div class="p-4">
+                    <img id="logo-intro" src="./images/icon/logo1.svg"/>
+                </div>
+                <br>
+                <hr style="width: 50%; margin: auto;">
+                <div class="p-4">
+                    <p style="font-size: 16px;">In Japanese, "iro" means color, and "iroiro" means "various"<br>
+                    So, how about exploring the wide variety of Japanese cultures through actual colors? </p>
+                    
+                </div>
+                <div class="p-4">
+                    <a href="./main html/index.html" class="button3">Let's go!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
