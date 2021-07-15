@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>IroIro</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../images/icon/logo3.svg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="../css_js/irohome.css">
+  <link rel="stylesheet" href="../css_js/irocolor.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../css_js/irocolor.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+  </style>
+</head>
+
+<body class="overlay" style="background-color: #151226;">
+  <div class="container-fluid h-100">
+    <nav class="navbar navbar-light sticky-top " style="z-index: 1;">
+      <a class="navbar-brand ps-3 pt-3 mb-sm-0" href="./index.html">
+        <img src="../images/icon/logo3b.svg" class="d-inline-block align-top logo " alt="">
+
+      </a>
+    </nav>
+    <div class="row text-center " style="padding: 0;">
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+        <div class="d-flex flex-column justify-content-center align-items-center position-fixed">
+          <div class="image-content">
+            <img id="maru" src="../images/content-image/gray-circle.svg">
+            <img id="image-content" class="image-1" src="../images/content-image/black-samurai.svg">
+            <img id="image-content" class="image-2" src="../images/content-image/black-yokai.svg">
+          </div>
+          <p class="color-name" id="md-color">黒い</p>
+
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 ">
+        <div class="d-flex flex-column justify-content-center align-items-center min-vh position-fixed">
+          <div class="text-content " id="samurai">
+            <div data-aos="fade-up" data-aos-delay="2000" data-aos-anchor-placement="bottom-bottom">
+              <h4>Black</h4>
+              <h3 class="pb-3" id="name">Samurai</h3>
+              <hr width="70px" style="color: antiquewhite; margin: auto;">
+              <p class="p-3" id="detail">Samurai were <span class="highlight">the hereditary military nobility and officer caste</span> of medieval and
+                early-modern
+                Japan from the 12th century to their abolition in the 1870s.<br>
+
+                They were the well-paid retainers of the daimyo. They had high prestige and special privileges such as
+                wearing
+                two swords.</p>
+            </div>
+
+
+          </div>
+          <div class="text-content" id="yokai">
+            <div data-aos="fade-up">
+              <h4>Black</h4>
+              <h3 class="pb-3" id="name">Yokai</h3>
+              <hr width="70px" style="color: antiquewhite; margin: auto;">
+              <p class="p-3" id="detail">Yōkai (妖怪, "ghost", "phantom", "strange apparition") are a class of
+                <span class="highlight">supernatural monsters and
+                spirits in Japanese folklore.</span>
+                <br>
+                The characteristics of yōkai range diversely from malevolent and mischievous entities believed to cause
+                misfortune and harm, to those who are considered to bring good fortune to those who encounter them.</p>
+            </div>
+          </div>
+
+          <div class="button-control">
+            <a class="color-link position-relative" style="display: inline-block;" href="./Yellow.html">
+              <img class="color-icon" src="../images/icon/yellow-button.svg">
+              <p class="position-absolute" id="prev" style="color: rgb(177, 177, 177);">See Yellow</p>
+            </a>
+            <a class="color-link position-relative" style="width: 15vw; display: inline-block;" href="./White.html">
+              <img class="color-icon" src="../images/icon/white-button.svg">
+              <p class="position-absolute" id="next" style="color: rgb(177, 177, 177);">See White</p>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="kanji kanji-lg" id="kanji-1">
+          <p>侍</p>
+        </div>
+        <div class="kanji kanji-md" id="kanji-2">
+          <p>妖怪</p>
+        </div>
+
+        <div style="position: fixed;">
+          <div class="scroll"></div>
+        </div>
+        
+
+
+      </div>
+
+
+
+    </div>
+  </div>
+
+  </div>
+
+
+
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

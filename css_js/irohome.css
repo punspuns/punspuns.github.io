@@ -1,0 +1,355 @@
+:root {
+    --base-grid: 8px;
+    --colour-white: #fff;
+    --colour-black: #1a1a1a;
+  }
+  
+  *, :after, :before {
+      box-sizing: border-box;
+  }
+
+  @font-face {
+    font-family: myFont;
+    src: url(osaka.woff);
+  }
+  
+  div {
+    font-family: 'Noto Sans JP', sans-serif;
+  }
+
+  a p {
+    color: #FFF8F8;
+  }
+
+  html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-position: 100%;
+    
+  }
+  
+  body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #FFF8F8;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  /*iro intro page*/
+
+  .irointro {
+    opacity: 0;
+    animation: intro-load .8s linear forwards;
+  }
+
+
+  #logo-intro {
+    width: 60%;
+  }
+
+  .logo {
+    max-width: 70%;
+    height: 100px;
+  }
+
+  a.button3{
+    display: inline-block;
+    padding: 0.3em 1.2em;
+    margin: 0 0.3em 0.3em 0;
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-weight:300;
+    font-size: 24px;
+    color:#FFFFFF;
+    background-color:#951f1f;
+    text-align:center;
+    transition: all 0.3s;
+    }
+
+    a.button3:hover{
+    background-color:#701818;
+    }
+  
+    
+
+    /*iro main page*/
+  
+    .iro-menu {
+      position: absolute;
+      top: 3%;
+      left: 3%;
+    }
+    
+  .icon-menu {
+    margin:0px auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+  .icon {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .beni {
+    animation: beni .4s linear forwards;
+  }
+
+  @keyframes beni {
+    0% {
+      transform: scale(1);
+    }
+    30% {
+      transform: scale(1.75);
+    }
+    60% {
+      transform: scale(2.5);
+    }
+    80% {
+      transform: scale(3);
+    }
+    100% {
+      transform: scale(3.5);
+    }
+  }
+
+  .description {
+    opacity: 0;
+    animation: des .5s linear forwards;
+  }
+
+  @keyframes des {
+    0% {
+      opacity: 0;
+    }
+    60% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+
+  .links__link {
+    opacity: 0;
+    animation: on-load .3s ease-in-out forwards;
+    animation-delay: calc(var(--item-count)*150ms);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  
+  
+  .links__icon {
+    width: calc(var(--base-grid)*17.5);
+    height: calc(var(--base-grid)*17.5);
+    transition: all .3s ease-in-out;
+    fill: var(--colour-black);
+  }
+  
+  
+  .links__link:after {
+    content: "";
+    background-color: transparent;
+    width: var(--link-size);
+    height: var(--link-size);
+    border: 2px dashed var(--colour-white);
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .3s cubic-bezier(.53,-.67,.73,.74);
+    transform: none;
+    opacity: 0;
+  }
+  
+  .links__link:hover .links__icon {
+    transition: all .3s ease-in-out;
+    transform: translateY(calc(var(--base-grid)*-1));
+  }
+  
+  .links__link:hover .links__text {
+    display: block;
+  }
+  
+  .links__link:hover:after {
+    transition: all .3s cubic-bezier(.37,.74,.15,1.65);
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  
+  @keyframes on-load {
+    0% {
+      opacity: 0;
+      transform: scale(.3);
+    }
+    70% {
+      opacity: .7;
+      transform: scale(1.1);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes on-load {
+    0% {
+      opacity: 0;
+      transform: scale(.3);
+    }
+    70% {
+      opacity: .7;
+      transform: scale(1.1);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes intro-load {
+    0% {
+      opacity: 0;
+      transform: translateY(60%);
+    }
+    70% {
+      opacity: .7;
+      transform: translateY(40%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(30%);
+    }
+  }
+  
+  
+
+  /*small screen PC, vertical ipad*/
+  @media screen and (max-width: 1440px) {
+    .icon-menu {
+      width: 40%;
+    }
+
+    .logo {
+      max-width: 80%;
+    }
+
+    .links__icon {
+      width: calc(var(--base-grid)*10);
+      height: calc(var(--base-grid)*10);
+      transition: all .3s ease-in-out;
+      fill: var(--colour-black);
+    }
+  }
+
+  @keyframes intro-load {
+    0% {
+      opacity: 0;
+      transform: translateY(60%);
+    }
+    70% {
+      opacity: .7;
+      transform: translateY(35%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(25%);
+    }
+  }
+
+  /*big screen PC*/
+  @media screen and (min-width: 1441px) {
+    .icon-menu {
+      width: 35%;
+    }
+
+    .logo {
+      max-width: 100%;
+    }
+
+    .links__icon {
+      width: calc(var(--base-grid)*17);
+      height: calc(var(--base-grid)*17);
+      transition: all .3s ease-in-out;
+      fill: var(--colour-black);
+    }
+
+    @keyframes intro-load {
+      0% {
+        opacity: 0;
+        transform: translateY(50%);
+      }
+      70% {
+        opacity: .7;
+        transform: translateY(40%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(35%);
+      }
+    }
+  }
+
+  /*ipad, horizontal*/
+  @media screen and (max-width: 768px) {
+    .icon-menu {
+      height: 35%;
+      width: 66%;
+    }
+
+    .links__icon {
+      width: calc(var(--base-grid)*12);
+      height: calc(var(--base-grid)*12);
+      transition: all .3s ease-in-out;
+      fill: var(--colour-black);
+    }
+  }
+
+  /*phones from iphone 6 to X*/
+  @media screen and (max-width: 414px) {
+    #iro-menu {
+      height: 150px;
+      
+    }
+
+    .icon-menu {
+      height: 35%;
+      width: 80%;
+    }
+
+    .logo {
+      max-width: 100%;
+      height: 60px;
+    }
+
+    .links__icon {
+      width: calc(var(--base-grid)*7);
+      height: calc(var(--base-grid)*7);
+      transition: all .3s ease-in-out;
+      fill: var(--colour-black);
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    
+  }
+  
+
+  
+
+  

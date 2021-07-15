@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>IroIro</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="../css_js/irohome.css">
+  <link rel="stylesheet" href="../css_js/irocolor.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../css_js/irocolor.js"></script>
+
+</head>
+
+<body class="overlay" style="background-color: #A694C8;">
+  <div class="container-fluid h-100">
+    <nav class="navbar navbar-light sticky-top " style="z-index: 1;">
+      <a class="navbar-brand ps-3 pt-3 mb-sm-0" href="./index.html">
+        <img src="../images/icon/logo2b.svg" class="d-inline-block align-top logo " alt="">
+
+      </a>
+    </nav>
+    <div class="row text-center " style="padding: 0;">
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+        <div class="d-flex flex-column justify-content-center align-items-center position-fixed">
+          <div class="image-content">
+            <img id="maru" src="../images/content-image/purple-circle.svg">
+            <img id="image-content" class="image-1" src="../images/content-image/purple-butterfly.svg">
+            <img id="image-content" class="image-2" src="../images/content-image/purple-kimono.svg">
+          </div>
+          <p class="color-name" id="big-color">紫</p>
+
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 ">
+        <div class="d-flex flex-column justify-content-center align-items-start min-vh position-fixed">
+          <div class="text-content" id="samurai">
+            <div data-aos="fade-up" data-aos-delay="2000" data-aos-anchor-placement="bottom-bottom">
+              <h4>Purple</h4>
+              <h3 class="pb-3" id="name">Emperor Butterfly</h3>
+              <hr width="70px" style="color: antiquewhite; margin: auto;">
+              <p class="p-3" id="detail">Sasakia charonda, the Japanese emperor or great purple emperor, is a species of butterfly in the family Nymphalidae. S. charonda is the national butterfly of Japan, where it is known as 大紫 or オオムラサキ (ō-murasaki, "great purple").</p>
+            </div>
+          </div>
+          <div class="text-content" id="yokai">
+            <div data-aos="fade-up">
+              <h4>Purple</h4>
+              <h3 class="pb-3" id="name">Kimono</h3>
+              <hr width="70px" style="color: antiquewhite; margin: auto;">
+              <p class="p-3" id="detail">The kimono is the Japanese traditional garment. Originally the word “kimono” referred to all types of clothing, but it has come to mean specifically the full-length traditional garments.  
+                <br>
+                Today, kimonos are most often worn by women, and on special occasions.</p>
+            </div>
+          </div>
+
+          <div class="button-control">
+            <a class="color-link position-relative" style="display: inline-block;" href="./Black.html">
+              <img class="color-icon" src="../images/icon/pink-button.svg">
+              <p class="position-absolute" id="prev">See Pink</p>
+            </a>
+            <a class="color-link position-relative" style="width: 15vw; display: inline-block;" href="./Red.html">
+              <img class="color-icon" src="../images/icon/white-button.svg">
+              <p style="color: #2e2e2e;" class="position-absolute" id="next">See White</p>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="kanji kanji-md" id="kanji-1">
+          <p>大紫</p>
+        </div>
+        <div class="kanji kanji-md" id="kanji-2">
+          <p>着物</p>
+        </div>
+
+
+      </div>
+
+
+
+    </div>
+  </div>
+
+  </div>
+
+
+
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
